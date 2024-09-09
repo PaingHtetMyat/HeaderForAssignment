@@ -146,7 +146,7 @@ body {
 
 
 /* RESPONSIVE */
-@media all and (max-width: 800px) {
+@media all and (max-width: 768px) {
 
     /* NAVIGATION BAR STYLE */
     .navbar {
@@ -238,6 +238,126 @@ body {
         font-size: 50px;
         font-weight: 500;
         line-height: 90px;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    .banner .info {
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--maincolor);
+        text-shadow: 1px 1px 1px beige;
+        line-height: 50px;
+    }
+
+    .banner .btn {
+        width: 60%;
+        height: 60px;
+        margin: auto;
+        border-radius: 8px;
+        background-color: white;
+        font-weight: 800;
+        font-size: 30px;
+        border: 3px solid #000;
+    }
+
+    .banner .btn:hover {
+        background-color: var(--maincolor);
+        color: white;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    /* NAVIGATION BAR STYLE */
+    .navbar {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: rgba(255, 255, 255, .4);
+    }
+
+    /* BRAND STYLE */
+    .navbar .brand {
+        flex-basis: 40%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .navbar .brand .brandicon {
+        font-size: 30px;
+        color: var(--maincolor);
+    }
+
+    .navbar .brand .brandname {
+        font-size: 30px;
+        margin-top: 3px;
+    }
+
+    .navbar .brand .brandname i {
+        font-weight: 800;
+        color: var(--maincolor)
+    }
+
+    /* NAVBAR STYLE */
+    .navbar .nav {
+        flex-basis: 0%;
+        display: none;
+    }
+
+    .navbar .nav .navitem {
+        width: 0%;
+        font-size: 0;
+    }
+
+    .navbar .nav .navitem:hover, .navbar .sign *:hover {
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    /* SIGN STYLE */
+    .navbar .sign {
+        flex-basis: 60%;
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .navbar .sign .signin {
+        width: 100px;
+        height: 50px;
+        border-radius: 15px;
+        border: 2px solid #000;
+        background-color: white;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .navbar .sign .icon {
+        font-size: 40px;
+    }
+
+    /* BANNER STYLE */
+    .banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 100px auto;
+        gap: 40px;
+        background-color: rgba(255, 255, 255, .2);
+        padding: 20px;
+    }
+
+    .banner .quote {
+        color: var(--maincolor);
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 80px;
         text-shadow: 2px 2px 2px black;
     }
 
